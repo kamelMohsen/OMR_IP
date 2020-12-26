@@ -1,3 +1,4 @@
 name: emptyenv
 channels:
   - defaults
+prefix: /home/kamel/anaconda3/envs/emptyenv

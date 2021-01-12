@@ -1,8 +1,35 @@
-
 import argparse
 import os
 import datetime
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Initialize parser
+
 parser = argparse.ArgumentParser()
 
 parser.add_argument("inputfolder", help = "Input File")
@@ -10,11 +37,8 @@ parser.add_argument("outputfolder", help = "Output File")
 
 args = parser.parse_args()
 
-with open(f"{args.outputfolder}/Output.txt", "w") as text_file:
-    text_file.write("Input Folder: %s" % args.inputfolder)
-    text_file.write("Output Folder: %s" % args.outputfolder)
-    text_file.write("Date: %s" % datetime.datetime.now())
-    
 
+tc_name = args.test_case_file_path
+o_name = args.output_file_path
 
-print('Finished !!') 
+main(f_name, tc_name, o_name)

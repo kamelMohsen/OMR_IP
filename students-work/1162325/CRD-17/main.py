@@ -772,7 +772,7 @@ def threshold_img(img):
     return img
 
 
-def initialize_KNN():
+def initialize_KNN(input_path):
     url = "train.csv"
     # Assign colum names to the dataset
     names = ['H', 'W', 'ADAU', 'ALAR', 'DU', "CLASS"]
@@ -809,7 +809,7 @@ show_size = 1
 
 input_path = args.inputfolder
 output_path = args.outputfolder
-classifier = initialize_KNN()
+classifier = initialize_KNN(input_path)
 images = []
 for file in os.listdir(input_path):
     images.append(file)
@@ -822,6 +822,7 @@ for input_img in images:
     img = threshold_img(img)
     rows,staff_space,staff_thickness,lines = remove_staff_lines(img,show_steps,show_size,digital)
     for row in rows:
-        segments = segment_img(row,digital,show_steps=1,show_size=1)
+        segments = segment_img(row,digital,show_steps,show_size)
         classify(segments,f,classifier,show_steps,show_size)
     f.close()
+print("DONE!!!!!!!!!")

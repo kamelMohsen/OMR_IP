@@ -1,0 +1,16 @@
+{
+[
+	\clef<"g">  \meter<"4/4">c#1 c2 d#1 d2 e#1 e2 f#1 f2 g#1 g2 a#1 a2 b#1 b2 
+],
+[
+	\clef<"g"> \meter<"2/4">c#1 c#2 d#1 d#2 e#1 e#2 f#1 f#2 g#1 g#2 a#1 a#2 b#1 b#2 
+]
+,
+[
+	\clef<"g">  \meter<"4/4">c#1 c2 d1 d2 e#1 e2 f#1 f2 g#1 g2 a1 a#2 b#1 b2 
+],
+[
+	\clef<"g"> \meter<"2/4">c#1 c2 d#1 d2 e#1 e2 f#1 f2 g1 g#2 a#1 a2 b#1 b#2 
+]
+}
+		
